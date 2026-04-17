@@ -31,7 +31,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Greet
+    - name: Greet user
       uses: ttych/meet_github_actions_custom/simple_greet@main
       with:
         username: "Jean"
