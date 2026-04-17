@@ -1,0 +1,13 @@
+name: "Example Simple JS Action"
+description: "Simple JS Action"
+inputs:
+  username:
+    description: "username"
+    required: true
+  greeting:
+    description: "greeting message"
+    required: false
+    default: "Hello"
+runs:
+  using: "node20"
+  main: "script.js"
