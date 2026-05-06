@@ -11,8 +11,8 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Greet user
-      uses: ttych/meet_github_actions_custom/simple_greet@main
+    - name: Javascript action
+      uses: ttych/meet_github_actions_custom/javascript_action@main
       with:
         username: "Jean"
         greeting: "Deer"

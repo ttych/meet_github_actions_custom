@@ -11,8 +11,8 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Greet user
-      uses: ./simple_greet
+    - name: Javascript action
+      uses: ./javascript_action
       with:
         username: "Jean"
         greeting: "Deer"
