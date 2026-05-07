@@ -1,5 +1,5 @@
 ---
-name: "workflow using docker action"
+name: "workflow using docker action - remote"
 on:
   push:
     branches:
@@ -12,7 +12,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Run docker action
+    - name: run Docker action
       uses: ttych/meet_github_actions_custom/docker_action@main
       with:
         message: "Hello from docker action"

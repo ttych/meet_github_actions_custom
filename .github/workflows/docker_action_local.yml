@@ -1,5 +1,5 @@
 ---
-name: "workflow using docker action"
+name: "workflow using docker action - local"
 on:
   push:
     branches:
@@ -12,7 +12,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Run docker action
+    - name: run Docker action
       uses: ./docker_action
       with:
         message: "Hello from docker action"
