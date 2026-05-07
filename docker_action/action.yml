@@ -1,0 +1,16 @@
+---
+
+name: "Docker Action"
+description: "a Docker Action"
+inputs:
+  message:
+    description: "message to display"
+    required: true
+outputs:
+  output-message:
+    description: "generated message"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.message }}
