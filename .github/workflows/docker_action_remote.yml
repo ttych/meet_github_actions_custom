@@ -1,0 +1,18 @@
+---
+name: "workflow using docker action"
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  greet-user:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Run docker action
+      uses: ttych/meet_github_actions_custom/docker_action@main
+      with:
+        message: "Hello from docker action"
